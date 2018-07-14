@@ -1,0 +1,10 @@
+[package]
+name = "pgsql-test"
+version = "0.1.0"
+authors = ["Andrea Chiumenti <achiumenti@red.software.systems>"]
+
+[dependencies]
+tokio-postgres = "0.3.0"
+futures = "0.1.23"
+rustc-serialize = "0.3.24"
+serde_json = "1.0.22"
