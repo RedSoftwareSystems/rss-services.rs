@@ -7,6 +7,7 @@ authors = ["Andrea Chiumenti <achiumenti@red.software.systems>"]
 tokio = "0.1.7"
 # tokio-postgres = {version = "0.3.0", futures = ["with-uuid","with-rustc-serialize"]}
 tokio-postgres = {git = "https://github.com/sfackler/rust-postgres", futures = ["with-uuid","with-rustc-serialize"]}
+tokio-uds = "0.3.0"
 futures = "0.1.23"
 rustc-serialize = "0.3.24"
 serde_json = "1.0.24"
