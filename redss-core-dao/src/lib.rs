@@ -1,12 +1,12 @@
+#![feature(extern_prelude)]
 extern crate futures;
 extern crate tokio;
 extern crate tokio_postgres;
 
-use tokio::prelude::*;
-use futures::Future;
-use tokio_postgres::{TlsMode};
+extern crate serde;
+extern crate serde_json;
+#[macro_use]
+extern crate serde_derive;
 
-fn find_users() {
-    let handshkae = tokio_postgres::connect("postgresql://postgres@localhost".parse().unwrap(),
-                                   TlsMode::None);
-}
+pub mod models;
+pub mod users;
